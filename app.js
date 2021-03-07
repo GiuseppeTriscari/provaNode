@@ -6,7 +6,7 @@ var apiServer = express();
 
 
 var port = 3000;
-document.title='NodeTriscari';
+//document.getElementsByTagName('title').html='NodeTriscari';
 
 apiServer.listen(port, () => {
     
