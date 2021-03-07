@@ -18,5 +18,5 @@ apiServer.get("/nome", (req, res) =>{
 
 apiServer.get("/", function(req, res){
     //document.title="NodeTriscari";
-    res.send('<h2><label style="background-color:green;">Sei in home!</label></h2>');
+    res.send('<h2><label style="background-color:lightgreen;">Sei in home!</label></h2>');
 })
