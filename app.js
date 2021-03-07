@@ -1,9 +1,3 @@
-var operations = function() {
-
-    document.title='NodeTriscari';
-
-}
-
 var http = require("http");
 
 var express = require("express");
@@ -12,7 +6,7 @@ var apiServer = express();
 
 
 var port = 3000;
-
+document.title='NodeTriscari';
 
 apiServer.listen(port, () => {
     
@@ -29,5 +23,3 @@ apiServer.get("/", function(req, res){
 });
 
 
-
-document.addEventListener("DOMContentLoaded", operations);
