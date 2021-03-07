@@ -9,7 +9,7 @@ var port = 3000;
 
 
 apiServer.listen(port, () => {
-    document.getElementsByTagName("title")='NODETRISCARI';
+    document.title='NODETRISCARI';
     console.log("server running on port ", port);
 });
 
