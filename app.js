@@ -13,10 +13,10 @@ apiServer.listen(port, () => {
 apiServer.get("/nome", (req, res) =>{
     //document.title="NodeTriscari";
     console.log("ho ricevuto una get su nome");
-    res.send("Ciao, il nome del server è: NODETRISCARI");
+    res.send('<label style="background-color:blue;">Ciao, il nome del server è: NODETRISCARI</label>');
 });
 
 apiServer.get("/", function(req, res){
     //document.title="NodeTriscari";
-    res.send('<h3 style="background-color:green;">Sei in home!</h3>');
+    res.send('<label style="background-color:green;">Sei in home!</label>');
 })
