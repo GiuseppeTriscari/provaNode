@@ -15,5 +15,5 @@ apiServer.get("/nome", (req, res) =>{
 });
 
 apiServer.get("/", function(req, res){
-    res.send("<h1>Sei in home!</h1>");
+    res.send("Sei in home!");
 })
