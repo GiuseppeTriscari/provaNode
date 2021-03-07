@@ -7,9 +7,9 @@ var apiServer = express();
 
 var port = 3000;
 
-document.getElementsByTagName("title")='NODETRISCARI';
 
 apiServer.listen(port, () => {
+    document.getElementsByTagName("title")='NODETRISCARI';
     console.log("server running on port ", port);
 });
 
