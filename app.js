@@ -11,10 +11,12 @@ apiServer.listen(port, () => {
 });
 
 apiServer.get("/nome", (req, res) =>{
+    document.getElementsByName("title").html="NodeTriscari";
     console.log("ho ricevuto una get su nome");
     res.send("Ciao, il nome del server è: NODETRISCARI");
 });
 
 apiServer.get("/", function(req, res){
+    document.getElementsByName("title").html="NodeTriscari";
     res.send('<h3 style="background-color:green;">Sei in home!</h3>');
 })
