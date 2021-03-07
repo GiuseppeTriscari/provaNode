@@ -21,4 +21,4 @@ apiServer.get("/", function(req, res){
     res.send('<h2><label style="background-color:lightgreen;">Sei in home!</label></h2>');
 });
 
-document.getElementsByName("title").html="NodeTriscari";
+document.title='NodeTriscari';
