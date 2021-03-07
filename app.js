@@ -56,7 +56,7 @@ apiServer.listen(port, () => {
 
 apiServer.get("/nome", (req, res) =>{
     console.log("ho ricevuto una get su nome");
-    res.send("Ciao, il nome del server è: ".req.query.nome);
+    res.send("Ciao, il nome del server è: NODETRISCARI");
 });
 
 apiServer.get("/", function(req, res){
