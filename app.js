@@ -23,6 +23,13 @@ apiServer.get("/", function(req, res){
 
 apiServer.get("/somma", (req, res) =>{
     console.log("richiesta: ", req.query);
+    if(!req.query.a && !req.query.b){
+        var tot = req.query.a + req.query.b;
+        console.log("tot= ", tot);
+        res.send("{ \"risultato\" : " + tot + "}");
+    }else{
+        res.send("parametri non corretti");
+    }
 });
 
 
