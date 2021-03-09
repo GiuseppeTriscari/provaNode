@@ -17,10 +17,6 @@ apiServer.get("/nome", (req, res) =>{
     res.send('<h2><label style="background-color:lightblue;">Ciao, il nome del server è: NODETRISCARI</label></h2>');
 });
 
-apiServer.get("/", function(req, res){
-    res.send('<h2><label style="background-color:lightgreen;">Sei in home!</label></h2>');
-});
-
 apiServer.get("/somma", (req, res) =>{
     console.log("richiesta: ", req.query);
     if(!req.query.a && !req.query.b){
@@ -32,4 +28,6 @@ apiServer.get("/somma", (req, res) =>{
     }
 });
 
-
+apiServer.get("/", function(req, res){
+    res.send('<h2><label style="background-color:lightgreen;">Sei in home!</label></h2>');
+});
