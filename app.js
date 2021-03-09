@@ -21,4 +21,8 @@ apiServer.get("/", function(req, res){
     res.send('<h2><label style="background-color:lightgreen;">Sei in home!</label></h2>');
 });
 
+apiServer.get("/somma", (req, res) =>{
+    console.log("richiesta: ", req.query);
+});
+
 
