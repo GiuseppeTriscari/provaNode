@@ -46,6 +46,6 @@ apiServer.post("/login" , (req, res) => {});
 apiServer.get("/voti" , (req, res) => {
     var voti = [{"data" : "15/11/2020", "voti" : "6", "descrizione" : "matematica"}];
 
-    res.send('<embed src="voti.html">')
+    res.render("voti.html");
 });
 
