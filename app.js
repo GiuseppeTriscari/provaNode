@@ -22,11 +22,21 @@ apiServer.get("/somma", (req, res) =>{
     if(req.query.a && req.query.b){
         var tot = Number(req.query.a) + Number(req.query.b);
         console.log("tot= ", tot);
+        res.status(200);
         res.send("{ \"risultato\" : " + tot + "}");
     }else{
+        res.status(500);
         res.send("parametri non corretti");
     }
 });
+
+
+// riceve in ingresso username e password e invia un messaggio "benvenuto [username]"
+apiServer.get("/login" , (req, res) => {}); 
+
+// riceve in ingresso username e password e invia un messaggio "benvenuto [username]"
+apiServer.post("/login" , (req, res) => {}); 
+
 
 apiServer.get("/", function(req, res){
     res.send('<h2><label style="background-color:lightgreen;">Sei in home!</label></h2>');
